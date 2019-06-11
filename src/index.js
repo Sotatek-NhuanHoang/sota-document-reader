@@ -27,12 +27,20 @@ window.renderSheetReader = function renderSheetReader(url, options) {
     );
 };
 
-renderPdfReader('https://cors-anywhere.herokuapp.com/https://app.assetgenius.jp/api/assets/8', {
-    httpHeaders: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTE1LCJlbWFpbCI6InRlc3QtcG1AYXNzZXRnZW5pdXMuanAifQ.xBBSsGfToGRWviwLg-G-HD7PXVLFjmac1CWzox2nYvg`,
-        'X-AG-Mobile': 'true',
-        'Origin': 'app.assetgenius.jp',
-    },
-});
+// renderPdfReader('https://cors-anywhere.herokuapp.com/https://app.assetgenius.jp/static/docs/building/7409e3d7828667ae95cc95c92536fc6e.undefined', {
+//     httpHeaders: {
+//         'Content-Type': 'application/json',
+//         'Authorization': `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTE1LCJlbWFpbCI6InRlc3QtcG1AYXNzZXRnZW5pdXMuanAifQ.xBBSsGfToGRWviwLg-G-HD7PXVLFjmac1CWzox2nYvg`,
+//         'X-AG-Mobile': 'true',
+//         'Origin': 'app.assetgenius.jp',
+//     },
+// });
+// renderPdfReader('https://cors-anywhere.herokuapp.com/https://app.assetgenius.jp/api/assets/8', {
+//     httpHeaders: {
+//         'Content-Type': 'application/json',
+//         'Authorization': `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTE1LCJlbWFpbCI6InRlc3QtcG1AYXNzZXRnZW5pdXMuanAifQ.xBBSsGfToGRWviwLg-G-HD7PXVLFjmac1CWzox2nYvg`,
+//         'X-AG-Mobile': 'true',
+//         'Origin': 'app.assetgenius.jp',
+//     },
+// });
 

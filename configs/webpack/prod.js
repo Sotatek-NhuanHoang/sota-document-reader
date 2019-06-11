@@ -7,7 +7,7 @@ const commonConfig = require('./common');
 module.exports = merge(commonConfig, {
   mode: 'production',
   entry: './index.js',
-  devtool: 'source-map',
+  // devtool: 'source-map',
   output: {
     filename: 'js/index.min.js',
     path: resolve(__dirname, '../../dist'),
