@@ -11,6 +11,7 @@ class SheetReader extends PureComponent {
         super(props);
 
         this.state = {
+            loaded: false,
             rows: [],
             columns: [],
         }
@@ -53,19 +54,27 @@ class SheetReader extends PureComponent {
                 ...columns,
             ]
 
-            this.setState({ rows: csvContentJson, columns: columns, });
+            this.setState({ rows: csvContentJson, columns: columns, loaded: true, });
         } catch (error) {
 
         }
     }
 
     render() {
-        const { rows, columns } = this.state;
+        const { rows, columns, loaded } = this.state;
         const w = window,
             d = document,
             e = d.documentElement,
             g = d.getElementsByTagName('body')[0],
             height = w.innerHeight || e.clientHeight || g.clientHeight;
+        
+        if (!loaded) {
+            return (
+                <p>
+                    Loading CSV...
+                </p>
+            )
+        }
 
         return (
             <ReactDataGrid
