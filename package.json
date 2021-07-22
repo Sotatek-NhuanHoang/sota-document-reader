@@ -78,6 +78,6 @@
     "react-csv": "^1.1.1",
     "react-data-grid": "^6.1.0",
     "react-pdf": "^4.0.5",
-    "xlsx": "^0.14.3"
+    "xlsx": "^0.17.0"
   }
 }
